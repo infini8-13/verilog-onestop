@@ -1,0 +1,57 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/infinite/intelFPGA_lite/20.1/modelsim_ase/bin
+vd_ff
+Z0 !s110 1625634127
+!i10b 1
+!s100 4B]]JOS;3<igU>8bX39f=3
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ij@joCgN8Lh@_hK?Chcf9D1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 d/home/infinite/Documents/Verilog Maven Silicon/Verilog Step by Step/lab4/sim
+w1625634099
+8/home/infinite/Documents/Verilog Maven Silicon/Verilog Step by Step/lab4/rtl/dff.v
+F/home/infinite/Documents/Verilog Maven Silicon/Verilog Step by Step/lab4/rtl/dff.v
+!i122 5
+L0 1 25
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1625634127.000000
+!s107 /home/infinite/Documents/Verilog Maven Silicon/Verilog Step by Step/lab4/rtl/dff.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/infinite/Documents/Verilog Maven Silicon/Verilog Step by Step/lab4/rtl/dff.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vdff_tb
+R0
+!i10b 1
+!s100 NeMU`?=H;RW28c9VP`=VJ3
+R1
+Ib>]]91Id0AfW6c:>K2F<Q2
+R2
+R3
+w1625634066
+8/home/infinite/Documents/Verilog Maven Silicon/Verilog Step by Step/lab4/tb/dff_tb.v
+F/home/infinite/Documents/Verilog Maven Silicon/Verilog Step by Step/lab4/tb/dff_tb.v
+!i122 6
+L0 1 57
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/infinite/Documents/Verilog Maven Silicon/Verilog Step by Step/lab4/tb/dff_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/infinite/Documents/Verilog Maven Silicon/Verilog Step by Step/lab4/tb/dff_tb.v|
+!i113 1
+R6
+R7
