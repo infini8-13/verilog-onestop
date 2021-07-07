@@ -1,0 +1,57 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/infinite/Documents/Verilog Maven Silicon/Verilog Step by Step/lab1/sim
+valu
+Z0 !s110 1624129492
+!i10b 1
+!s100 ;<MEMA6L@X@4@gNX8:JbE1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ILHFT8iOR0MlY6ifNN?G`K1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 d/home/infinite/Documents/Verilog Maven Silicon/Verilog Step by Step/lab2/sim
+Z4 w1524785032
+8/home/infinite/Documents/Verilog Maven Silicon/Verilog_Lab_Solutions/lab2/rtl/alu.v
+F/home/infinite/Documents/Verilog Maven Silicon/Verilog_Lab_Solutions/lab2/rtl/alu.v
+!i122 8
+L0 29 65
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1624129492.000000
+!s107 /home/infinite/Documents/Verilog Maven Silicon/Verilog_Lab_Solutions/lab2/rtl/alu.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/infinite/Documents/Verilog Maven Silicon/Verilog_Lab_Solutions/lab2/rtl/alu.v|
+!i113 1
+Z7 o-work work
+Z8 tCvgOpt 0
+valu_tb
+R0
+!i10b 1
+!s100 QA5D0co40C;6lV<So^eFl1
+R1
+Ih^n3GMmfP]GmPh]V64BN^0
+R2
+R3
+R4
+8/home/infinite/Documents/Verilog Maven Silicon/Verilog_Lab_Solutions/lab2/tb/alu_tb.v
+F/home/infinite/Documents/Verilog Maven Silicon/Verilog_Lab_Solutions/lab2/tb/alu_tb.v
+!i122 9
+L0 28 123
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/infinite/Documents/Verilog Maven Silicon/Verilog_Lab_Solutions/lab2/tb/alu_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/infinite/Documents/Verilog Maven Silicon/Verilog_Lab_Solutions/lab2/tb/alu_tb.v|
+!i113 1
+R7
+R8
