@@ -27,18 +27,15 @@ module alu_tb();
 
   reg [(4*8)-1:0] string_cmd;
 
-// Step 1. Instantiate the design ALU
+//Instantiating the ALU design
   alu dut (a, b, command, enable, y);
   
-// Step 2. Write a task named "initialize" to initialize the inputs of DUT
+//Task to initialise inputs to DUT
   task initialize;
   begin
    {a, b, command, enable} = 0;
   end
   endtask
-
-
-// Step 3. Understand the complete test bench and various tasks defined below.
 
   task en_oe(input i);
   begin
