@@ -17,8 +17,8 @@ module alu(a,
             INV  = 4'b1010, // Complement
             NAND = 4'b1011, // Logical NAND
             NOR  = 4'b1100, // Logical NOR
-            XOR  = 4'b1101, // Logical EXOR
-            XNOR = 4'b1110, // Logical EXNOR
+            XOR  = 4'b1101, // Logical XOR
+            XNOR = 4'b1110, // Logical XNOR
             BUF  = 4'b1111; // Buffer
 
   input [7:0] a,
@@ -30,8 +30,7 @@ module alu(a,
   reg    [15:0] out;
 
 
-  // Step 1. Write down the functionality of ALU based on commands given above.
-  //         *Use arithmetic and logical operators & Switch Case Statement of Verilog
+  //ALU Functionality
   always@(*)
   begin
     case (command)
@@ -52,13 +51,9 @@ module alu(a,
 	XNOR : out = ~ (a ^ b);
 	BUF  : out = a;
 	default : out = 16'hxxxx;
-
-    //--------- write the functionality here -------  
-
     endcase
   end
-
-// Step 2. Understand the tri-state output logic
+  // tri-state output
   assign y = (oe) ? out : 16'hzzzz;
 
 endmodule
