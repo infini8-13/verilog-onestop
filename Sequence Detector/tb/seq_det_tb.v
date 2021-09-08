@@ -13,7 +13,7 @@ module seq_det_tb();
               .reset(reset),
               .dout(dout));
   
-// Step 1. Generate clock, using parameter "cycle"   
+// Clock gen   
   always
   begin
     #(cycle/2);
@@ -22,16 +22,12 @@ module seq_det_tb();
     clock = 1; 
   end      
 
-// Step 2. Write a task named "initialize" to initialize 
-//         the input din of sequence detector.
+// initialize the input din of sequence detector.
   task initialize;
     begin
      din = 0;
     end
   endtask  
-
-
-
 
   task delay(input integer i);
     begin
@@ -39,8 +35,7 @@ module seq_det_tb();
     end
   endtask
  
-// Step 3. Write a task named "RESET" to reset the design,
-//         use the above delay task for adding delay
+// reset design
   task RESET;
     begin
       reset = 1;
@@ -51,17 +46,13 @@ module seq_det_tb();
 
 
 
-// Step 4. Write a task named "stimulus" which provides input to
-//         design on negedge of clock
-
+// provides input to design on negedge of clock
   task stimulus(input i);
     begin
       @(negedge clock);
       din = i;
     end
   endtask  
-
-//Step 5: Understand the remaining Logic defined below.
 
   initial $monitor("Reset=%b, state=%b, Din=%b, Output Dout=%b",
                    reset,SQD.present_state,din,dout);
