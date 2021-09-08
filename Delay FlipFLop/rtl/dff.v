@@ -4,12 +4,12 @@ module d_ff(clk,
            q,
            qb);
 
- // Step1 : Declare Port Directions
+ //Port declarations
  input clk, reset, d;
  output q, qb;
  reg q;
  
- // Step2 : Write the behavioral logic for D flip-flop functionality.
+ //Behavioral logic for D flip-flop.
  always@(posedge clk)
    begin
      if(reset)   
@@ -17,7 +17,7 @@ module d_ff(clk,
      else
         q<=d;           
    end
- // Step3: Assign complement of q to qb.
+
  assign qb = ~ q;
        
 
