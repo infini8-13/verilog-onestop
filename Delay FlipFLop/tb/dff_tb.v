@@ -1,6 +1,6 @@
 module dff_tb();
 
-// Step 1. Define a parameter with name "cycle" which is equal to 10  
+
   reg clk,
       reset,
       d;
@@ -9,7 +9,8 @@ module dff_tb();
        qb;
        
   parameter cycle = 10;
-// Step 2. Instantiate the d_ff design       
+	
+//Instantiating the d_ff design       
   d_ff dut (clk, reset, d, q, qb);
 // Step 3. Understand the clock generation logic
   always
