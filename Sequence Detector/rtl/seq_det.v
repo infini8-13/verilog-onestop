@@ -1,15 +1,16 @@
+//Implementation of a Sequence detector 
+
 module seq_det(din,
                clock,
                reset,
                dout);
-// Step 1. Declare the states as parameter "IDLE","STATE1","STATE2","STATE3"
-//         and use binary encoding for encoding these states.
+  
+//Binary encoded state parameters
   parameter   IDLE   = 2'b0,
               STATE1 = 2'b01,
               STATE2 = 2'b10,
               STATE3 = 2'b11;     
 
-// Step 2. Write down the port declarations with proper directions.
   input  din, clock, reset;
   output dout;
 
@@ -17,7 +18,7 @@ module seq_det(din,
   reg [1:0] present_state,
             next_state;
 
-// Step 3. Write down the sequential logic for present state
+// sequential logic for present state
   always@(posedge clock)
   begin
    if (reset)
@@ -27,7 +28,7 @@ module seq_det(din,
   end
 
 
-// Step 4. Understand the combinational logic for next state
+// combinational logic for next state
   always@(present_state,din)
   begin
     case (present_state)
@@ -51,7 +52,7 @@ module seq_det(din,
     endcase
   end
   
-// Step 5. Write down the logic for output dout
+// Output logic
   assign dout = (present_state == STATE3) ? 1 : 0;
 
 endmodule
