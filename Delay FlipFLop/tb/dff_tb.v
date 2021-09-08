@@ -10,9 +10,10 @@ module dff_tb();
        
   parameter cycle = 10;
 	
-//Instantiating the d_ff design       
-  d_ff dut (clk, reset, d, q, qb);
-// Step 3. Understand the clock generation logic
+//Instantiating the dff design       
+  dff dut (clk, reset, d, q, qb);
+	
+//Clock gen with cycle parameter	
   always
   begin
     #(cycle/2);
@@ -21,7 +22,6 @@ module dff_tb();
       clk=~clk;
   end
 	  
-//Step 4. Understand the various tasks used and also how to use tasks in testbench.
   task rst_dut();
   begin
     reset=1'b1;
@@ -52,7 +52,6 @@ module dff_tb();
     $finish;
   end
 
-//Step5. Use $monitor task in a parallel initial block  to display inputs and outputs.
   initial $monitor("D Input = %b, Q output = %b, Not Q Output = %b, Reset = %b",
                    d, q, qb, reset);
 endmodule
