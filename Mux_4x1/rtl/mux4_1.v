@@ -1,15 +1,17 @@
+// Implementation of a 4 to 1 Multiplexer
+
 module mux4_1(a,
               sel,
               y);
 
        
 
-// Step 1 : Define the port directions with proper datatypes & ranges.
+//Port directions to the variables
 input [3:0] a ;
 input [1:0] sel ;
 output reg y;
 
-// Step 2 : Write the MUX behaviour as a parallel logic using case statement in behavioural modelling.
+//MUX behaviour as a parallel logic in behavioural modelling.
 always@(*)
   begin
     case (sel)
