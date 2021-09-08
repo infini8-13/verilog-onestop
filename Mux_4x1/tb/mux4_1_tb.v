@@ -1,3 +1,5 @@
+//Testbench for 4 to 1 Multiplexer.
+
 module mux4_1_tb();
 
 // Variables required for testbench
