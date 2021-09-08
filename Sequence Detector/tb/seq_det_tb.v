@@ -1,3 +1,5 @@
+//Testbench for Sequence Detector module
+
 module seq_det_tb();
        
   parameter cycle=10;
