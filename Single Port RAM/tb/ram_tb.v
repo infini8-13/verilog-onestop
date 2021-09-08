@@ -1,3 +1,5 @@
+// Testbench for Single Port RAM Module
+
 module ram_tb;
 
   wire [7:0] data;
@@ -7,7 +9,7 @@ module ram_tb;
 
   integer l;
 
-// Step 1. Instantiate the RAM module and connect the ports
+// Instantiating the RAM module and connect the ports
   ram r1 (.data(data), .we(we), .enable(enable), .addr(addr));
  
   assign data= (we && !enable) ? tempd : 8'hzz;
@@ -18,18 +20,13 @@ module ram_tb;
   end
   endtask
 
-  // Step 2. Define body for the task named stimulus to initialize the
-  //         "addr" and "tempd" inputs through i and j variables.
-  //         use i for initialization of "addr" and j for initialization of "tempd".
-
   task stimulus(input [3:0]i, input [7:0]j);
   begin	
     addr = i;
-    tempd = j;		// ------ Define the body here ------
+    tempd = j;		
   end
   endtask
 
-// Step 3. Understand the various tasks defined in this testbench
   task write();
   begin
     we=1'b1;
